@@ -45,16 +45,23 @@ class ProductManager {
         this.product.push(product)
     }
 
-    getProductById = (productID) => {
-        if(productID > this.product.length || productID < 1 ){
-            console.log("el id no existe o es menos que 1, not found")
+    // getProductById = (productID) => {
+    //     if(productID > this.product.length || productID < 1 ){
+    //         console.log("el id no existe o es menos que 1, not found")
 
-            return null
-        } 
-        return this.product[productID-1]
-        
-    
+    //         return null
+    //     } 
+    //     return this.product[productID-1]
 
+    // }
+
+
+    getProductById(id) {
+        let producto = this.product.find((product) => product.id === id);
+        if (producto) {
+            return producto;
+        }
+        return "Producto no encontrado";
     }
 
 
@@ -83,5 +90,5 @@ manager.addProduct("Procuto prueba", "esto es un producto lrueba", 200, "sin img
 manager.addProduct("Procuto prueba", "esto es un producto lruebasdasda", 200, "sin img", "abc123", 25)
 // manager.addProduct("procuto prueba","esto es u procuto prueba", 200, "sin imagen", 25 )
 
-console.log(manager.getProducts())
+console.log(manager.getProducts(1))
 console.log(manager.getProductById(2))
