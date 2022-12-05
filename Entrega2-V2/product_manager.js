@@ -60,7 +60,11 @@ class ProductManager {
      deleteProduct = async (id, obj) => {
         obj.id = id
         const list = await this.read()
-        list.splice()
+        if(this.path.id == id){
+         list.splice(2, 1)
+        }
+
+        
      }
 
 
