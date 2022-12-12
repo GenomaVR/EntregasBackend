@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Cerveza quilmes",
+        "description":"Cerveza quilmes lata 455 Ml",
+        "price":250,
+        "code":"abc123"
+    },
+    {
+        "id": 2,
+        "title": "Cerveza imperial",
+        "description":"Cerveza imperial lata 455 Ml",
+        "price":280,
+        "code":"abc1234"
+    },
+    {
+        "id": 3,
+        "title": "Cerveza shneider",
+        "description":"Cerveza shneider lata 455 Ml",
+        "price":220,
+        "code":"abc12345"
+    }
+]
