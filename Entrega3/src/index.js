@@ -1,5 +1,6 @@
 import express from "express"
 import {productManager} from "./managers/index.js"
+import { ERRORS } from "./const/errors.js";
 
 const app = express();
 
